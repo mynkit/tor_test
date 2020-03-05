@@ -9,12 +9,12 @@ LOGGER = logging.getLogger(__name__)
 
 
 proxies = {
-        'http':'socks5://127.0.0.1:9050',
-        'https':'socks5://127.0.0.1:9050'
-        }
+    'http': 'socks5://127.0.0.1:9050',
+    'https': 'socks5://127.0.0.1:9050'
+}
 
 if __name__ == '__main__':
-    subprocess.call(['service', 'tor','restart'])
+    subprocess.call(['service', 'tor', 'restart'])
 
     LOGGER.info(f'proxies: {proxies}')
 
@@ -25,4 +25,3 @@ if __name__ == '__main__':
     LOGGER.info('proxiesの設定あり')
     res = requests.get('https://ipinfo.io', proxies=proxies).json()
     LOGGER.info(f'res: {res}')
-
