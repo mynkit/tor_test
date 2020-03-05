@@ -8,3 +8,4 @@ services:
     tty: true
     volumes:
       - .:/src
+    shm_size: 512m

@@ -7,3 +7,5 @@ start:
 	docker-compose run tor python tor_test.py
 test:
 	docker-compose run tor python -m unittest discover -v
+format:
+	docker-compose run tor autopep8 -ivr .
