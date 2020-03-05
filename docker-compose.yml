@@ -8,5 +8,3 @@ services:
     tty: true
     volumes:
       - .:/src
-    ports:
-      - 9050:9050
