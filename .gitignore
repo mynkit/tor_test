@@ -1,0 +1,12 @@
+# User Append.
+.DS_Store
+__pycache__/
+*.csv
+*.xls
+*.xlsx
+*.pkl
+*.html
+*.ipynb
+.ipynb_checkpoints/
+.vscode
+jupyter/
