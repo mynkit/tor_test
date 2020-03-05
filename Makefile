@@ -5,3 +5,5 @@ stop:
 	docker-compose down
 start:
 	docker-compose run tor python tor_test.py
+test:
+	docker-compose run tor python -m unittest discover -v
